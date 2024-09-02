@@ -16,5 +16,7 @@ mod test {
         filter.set_index(sha256_index.clone());
         filter.set_index(sha384_index.clone());
         assert!(filter.has_index(&sha256_index) && filter.has_index(&sha384_index));
+        filter.remove_index(&sha256_index);
+        assert!(!filter.has_index(&sha256_index));
     }
 }

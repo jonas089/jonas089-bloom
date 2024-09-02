@@ -18,6 +18,9 @@ impl BloomFilter {
     pub fn set_index(&mut self, v: BigInt) {
         self.a.insert(v);
     }
+    pub fn remove_index(&mut self, v: &BigInt) {
+        self.a.remove(v);
+    }
     pub fn has_index(&self, v: &BigInt) -> bool {
         match self.a.get(v) {
             Some(_) => true,
