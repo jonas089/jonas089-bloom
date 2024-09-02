@@ -2,7 +2,7 @@
 This library is a succinct implementation of a Bloom Filter designed to work with generic Strings.
 Use any unique representation e.g. a hash function of your choice to represent your data uniquely.
 
-Define a field by setting `p` to a *sufficiently large number*. Since `p` represents the size of the
+Define a solution space by setting `p` to a *sufficiently large number*. Since `p` represents the size of the
 output space for all hash functions, it does not need to be prime.
 
 A simple example using just one hash function (Sha256) where the hash of a generic data String (`uid`):
